@@ -101,6 +101,12 @@ removing the `config` package, its two dependencies in the Gradle build file, an
 annotations in the DTO class.
 
 ## Future Enhancements
+To be a pure REST application, I would suggest that a future version not return `yes` or
+`no` but instead return HTTP status codes of 204 upon route found and 404 upon route not
+found.  After all, a fundamental principle of REST is brevity, and an HTTP status code
+in the response header could provide the requisite information to consumers without
+needing to provide a response body.
+
 Per requirements, this project used Java and Spring Boot and no extra libraries.
 
 Depending on business requirements, the application could be enhanced by adding the ability
