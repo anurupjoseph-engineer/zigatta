@@ -98,12 +98,12 @@ cities.
 The application uses Swagger/OpenAPI for ease with development.  I left that Swagger/OpenAPI
 in the application for the benefit of future developers.  It may easily be removed by
 removing the `config` package, its two dependencies in the Gradle build file, and respective
-annotations in the DTO class.
+annotations in the DTO and controller classes.
 
 ## Future Enhancements
 To be a pure REST application, I would suggest that a future version not return `yes` or
-`no` but instead return HTTP status codes of 204 upon route found and 404 upon route not
-found.  After all, a fundamental principle of REST is brevity, and an HTTP status code
+`no` but instead only return HTTP status codes of 204 upon route found and 404 upon route
+not found.  After all, a fundamental principle of REST is brevity, and an HTTP status code
 in the response header could provide the requisite information to consumers without
 needing to provide a response body.
 
