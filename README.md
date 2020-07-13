@@ -64,11 +64,11 @@ You may use Gradle to run the application.
 compile the code and run the unit and integration tests.  On a Windows system, at the command
 prompt, issue a
 ```
-gradle clean run
+gradle clean bootRun
 ```
 while at a POSIX system's command prompt, issue a
 ```
-./gradlew clean run
+./gradlew clean bootRun
 ```
 
 Given the sample input file consisting of
